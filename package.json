@@ -1,0 +1,30 @@
+{
+    "name": "babel-runtime-amd",
+    "version": "1.0.0",
+    "description": "An AMD version of the babel-runtime",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bennieswart/babel-runtime-amd"
+    },
+    "keywords": [
+        "babel-runtime",
+        "reqiurejs",
+        "amd"
+    ],
+    "author": "Bennie Swart <bennieswart@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bennieswart/babel-runtime-amd/issues"
+    },
+    "homepage": "https://github.com/bennieswart/babel-runtime-amd#readme",
+    "devDependencies": {
+        "babel-polyfill": "^6.26.0",
+        "babel-runtime": "^6.26.0",
+        "core-js": "^2.5.3",
+        "glob": "^7.1.2",
+        "mkdirp": "^0.5.1",
+        "regenerator-runtime": "^0.11.1",
+        "requirejs": "^2.3.5",
+        "uglify-js": "^3.3.7"
+    }
+}
