@@ -1,0 +1,17 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "exclude": [
+                "transform-regenerator",
+            ]
+        }]
+    ],
+    "plugins": [
+        ["@babel/plugin-transform-modules-amd", {
+            "noInterop": true
+        }],
+        ["@babel/plugin-transform-runtime", {
+            "useESModules": true
+        }]
+    ]
+}

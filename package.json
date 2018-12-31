@@ -1,6 +1,6 @@
 {
     "name": "babel-runtime-amd",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "An AMD version of the babel-runtime",
     "repository": {
         "type": "git",
@@ -18,6 +18,12 @@
     },
     "homepage": "https://github.com/bennieswart/babel-runtime-amd#readme",
     "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/runtime": "^7.2.0",
         "babel-polyfill": "^6.26.0",
         "babel-runtime": "^6.26.0",
         "core-js": "^2.5.3",
