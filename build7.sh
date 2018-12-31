@@ -9,6 +9,8 @@ cp -r node_modules/@babel/runtime build/prep/@babel
 rm -r build/prep/@babel/runtime/helpers/esm
 sed -i 's/..\/..\/helpers\/esm/..\/helpers/' build/prep/@babel/runtime/helpers/*
 sed -i 's/helpers\/esm/helpers/' build/prep/@babel/runtime/helpers/*
+sed -i 's/(0, _typeof4.default)(\([^)]*\))/typeof \1/g' build/prep/@babel/runtime/helpers/typeof.js
+sed -i '1 s/^.*$/define(["exports"], function(_exports) {/g' build/prep/@babel/runtime/helpers/typeof.js
 
 sed -i 's/define\( \|(\)/define2\1/g' build/prep/core-js/modules/es6.regexp.to-string.js
 ./node_modules/requirejs/bin/r.js -convert build/prep/core-js build/amd/core-js
