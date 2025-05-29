@@ -16,6 +16,7 @@ sed -i 's/define\( \|(\)/define2\1/g' build/prep/core-js/modules/es6.regexp.to-s
 ./node_modules/requirejs/bin/r.js -convert build/prep/core-js build/amd/core-js
 ./node_modules/requirejs/bin/r.js -convert build/prep/@babel/runtime build/amd/@babel/runtime
 mv build/amd/@babel/runtime/regenerator{/index.js,.js}
+sed -i 's/..\/helpers/.\/helpers/' build/amd/@babel/runtime/regenerator.js
 ./node_modules/requirejs/bin/r.js -convert build/prep/regenerator-runtime build/amd/regenerator-runtime
 mv build/amd/regenerator-runtime{/runtime-module.js,.js}
 sed -i 's/".\/runtime"/".\/regenerator-runtime\/runtime"/' build/amd/regenerator-runtime.js
